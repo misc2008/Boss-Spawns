@@ -192,27 +192,27 @@ public OnPluginStart()
 		HookConVarChange(ConVars[i], HandleCvars);
 	}
 	
-	RegAdminCmd("sm_hatman", Command_SpawnHatman, ADMFLAG_GENERIC, "Spawns the Horsemann - Usage: sm_hatman <scale> <glow 0/1>");
-	RegAdminCmd("sm_eyeboss", Command_SpawnEyeBoss, ADMFLAG_GENERIC, "Spawns the MONOCULUS! - Usage: sm_eyeboss <scale> <glow 0/1>");
-	RegAdminCmd("sm_eyeboss_red", Command_SpawnEyeBossRED, ADMFLAG_GENERIC, "Spawns the RED Spectral MONOCULUS! - Usage: sm_eyeboss_red <scale> <glow 0/1>");
-	RegAdminCmd("sm_eyeboss_blue", Command_SpawnEyeBossBLU, ADMFLAG_GENERIC, "Spawns the BLU Spectral MONOCULUS! - Usage: sm_eyeboss_blue <scale> <glow 0/1>");
-	RegAdminCmd("sm_merasmus", Command_SpawnMerasmus, ADMFLAG_GENERIC, "Spawns Merasmus - Usage: sm_merasmus <scale> <glow 0/1>");
-	RegAdminCmd("sm_skelegreen", Command_SpawnGreenSkeleton, ADMFLAG_GENERIC, "Spawns a Green Skeleton - Usage: sm_skelegreen <scale> <glow 0/1>");
-	RegAdminCmd("sm_skelered", Command_SpawnREDSkeleton, ADMFLAG_GENERIC, "Spawns a RED Skeleton - Usage: sm_skelered <scale> <glow 0/1>");
-	RegAdminCmd("sm_skeleblue", Command_SpawnBLUSkeleton, ADMFLAG_GENERIC, "Spawns a BLU Skeleton - Usage: sm_skeleblue <scale> <glow 0/1>");
-	RegAdminCmd("sm_skeleking", Command_SpawnSkeletonKing, ADMFLAG_GENERIC, "Spawns a Skeleton King - Usage: sm_skeleking <scale> <glow 0/1>");
-	RegAdminCmd("sm_ghost", Command_SpawnGhost, ADMFLAG_GENERIC, "Spawns a Ghost - Usage: sm_ghost <scale> <glow 0/1>");
+	RegAdminCmd("sm_hatman", Command_SpawnHatman, ADMFLAG_CUSTOM1, "Spawns the Horsemann - Usage: sm_hatman <scale> <glow 0/1>");
+	RegAdminCmd("sm_eyeboss", Command_SpawnEyeBoss, ADMFLAG_CUSTOM1, "Spawns the MONOCULUS! - Usage: sm_eyeboss <scale> <glow 0/1>");
+	RegAdminCmd("sm_eyeboss_red", Command_SpawnEyeBossRED, ADMFLAG_CUSTOM1, "Spawns the RED Spectral MONOCULUS! - Usage: sm_eyeboss_red <scale> <glow 0/1>");
+	RegAdminCmd("sm_eyeboss_blue", Command_SpawnEyeBossBLU, ADMFLAG_CUSTOM1, "Spawns the BLU Spectral MONOCULUS! - Usage: sm_eyeboss_blue <scale> <glow 0/1>");
+	RegAdminCmd("sm_merasmus", Command_SpawnMerasmus, ADMFLAG_CUSTOM1, "Spawns Merasmus - Usage: sm_merasmus <scale> <glow 0/1>");
+	RegAdminCmd("sm_skelegreen", Command_SpawnGreenSkeleton, ADMFLAG_CUSTOM1, "Spawns a Green Skeleton - Usage: sm_skelegreen <scale> <glow 0/1>");
+	RegAdminCmd("sm_skelered", Command_SpawnREDSkeleton, ADMFLAG_CUSTOM1, "Spawns a RED Skeleton - Usage: sm_skelered <scale> <glow 0/1>");
+	RegAdminCmd("sm_skeleblue", Command_SpawnBLUSkeleton, ADMFLAG_CUSTOM1, "Spawns a BLU Skeleton - Usage: sm_skeleblue <scale> <glow 0/1>");
+	RegAdminCmd("sm_skeleking", Command_SpawnSkeletonKing, ADMFLAG_CUSTOM1, "Spawns a Skeleton King - Usage: sm_skeleking <scale> <glow 0/1>");
+	RegAdminCmd("sm_ghost", Command_SpawnGhost, ADMFLAG_CUSTOM1, "Spawns a Ghost - Usage: sm_ghost <scale> <glow 0/1>");
 	
-	RegAdminCmd("sm_slayhatman", Command_SlayHatman, ADMFLAG_GENERIC, "Slays all Horsemenn on the map - Usage: sm_slayhatman");
-	RegAdminCmd("sm_slayeyeboss", Command_SlayEyeBoss, ADMFLAG_GENERIC, "Slays all MONOCULUS! on the map - Usage: sm_slayeyeboss");
-	RegAdminCmd("sm_slayeyeboss_red", Command_SlayEyeBossRED, ADMFLAG_GENERIC, "Slays all RED Spectral MONOCULUS! on the map - Usage: sm_slayeyeboss_red");
-	RegAdminCmd("sm_slayeyeboss_blue", Command_SlayEyeBossBLU, ADMFLAG_GENERIC, "Slays all BLU Spectral MONOCULUS! on the map - Usage: sm_slayeyeboss_blue");
-	RegAdminCmd("sm_slaymerasmus", Command_SlayMerasmus, ADMFLAG_GENERIC, "Slays all Merasmus on the map - Usage: sm_slaymerasmus");
-	RegAdminCmd("sm_slayskelegreen", Command_SlayGreenSkeleton, ADMFLAG_GENERIC, "Slays all Green Skeletons on the map - Usage: sm_slayskelegreen");
-	RegAdminCmd("sm_slayskelered", Command_SlayREDSkeleton, ADMFLAG_GENERIC, "Slays all RED Skeletons on the map - Usage: sm_slayskelered");
-	RegAdminCmd("sm_slayskeleblue", Command_SlayBLUSkeleton, ADMFLAG_GENERIC, "Slays all BLU Skeletons on the map - Usage: sm_slayskeleblue");
-	RegAdminCmd("sm_slayskeleking", Command_SlaySkeletonKing, ADMFLAG_GENERIC, "Slays all Skeleton Kings on the map - Usage: sm_slayskeleking");
-	RegAdminCmd("sm_slayghost", Command_SlayGhost, ADMFLAG_GENERIC, "Slays all Ghosts on the map - Usage: sm_slayghost");
+	RegAdminCmd("sm_slayhatman", Command_SlayHatman, ADMFLAG_CUSTOM1, "Slays all Horsemenn on the map - Usage: sm_slayhatman");
+	RegAdminCmd("sm_slayeyeboss", Command_SlayEyeBoss, ADMFLAG_CUSTOM1, "Slays all MONOCULUS! on the map - Usage: sm_slayeyeboss");
+	RegAdminCmd("sm_slayeyeboss_red", Command_SlayEyeBossRED, ADMFLAG_CUSTOM1, "Slays all RED Spectral MONOCULUS! on the map - Usage: sm_slayeyeboss_red");
+	RegAdminCmd("sm_slayeyeboss_blue", Command_SlayEyeBossBLU, ADMFLAG_CUSTOM1, "Slays all BLU Spectral MONOCULUS! on the map - Usage: sm_slayeyeboss_blue");
+	RegAdminCmd("sm_slaymerasmus", Command_SlayMerasmus, ADMFLAG_CUSTOM1, "Slays all Merasmus on the map - Usage: sm_slaymerasmus");
+	RegAdminCmd("sm_slayskelegreen", Command_SlayGreenSkeleton, ADMFLAG_CUSTOM1, "Slays all Green Skeletons on the map - Usage: sm_slayskelegreen");
+	RegAdminCmd("sm_slayskelered", Command_SlayREDSkeleton, ADMFLAG_CUSTOM1, "Slays all RED Skeletons on the map - Usage: sm_slayskelered");
+	RegAdminCmd("sm_slayskeleblue", Command_SlayBLUSkeleton, ADMFLAG_CUSTOM1, "Slays all BLU Skeletons on the map - Usage: sm_slayskeleblue");
+	RegAdminCmd("sm_slayskeleking", Command_SlaySkeletonKing, ADMFLAG_CUSTOM1, "Slays all Skeleton Kings on the map - Usage: sm_slayskeleking");
+	RegAdminCmd("sm_slayghost", Command_SlayGhost, ADMFLAG_CUSTOM1, "Slays all Ghosts on the map - Usage: sm_slayghost");
 	
 	AutoExecConfig_CleanFile();
 }
